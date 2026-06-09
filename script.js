@@ -42,12 +42,12 @@ document.getElementById("resume").innerHTML = `
 
 <h3>TECHNICAL SKILLS</h3>
 <ul>
-<li>${technical}</li>
+${technical.split(',').map(skill => `<li>${skill.trim()}</li>`).join('')}
 </ul>
 
 <h3>SOFT SKILLS</h3>
 <ul>
-<li>${soft}</li>
+${soft.split(',').map(skill => `<li>${skill.trim()}</li>`).join('')}
 </ul>
 
 <h3>INTERNSHIP</h3>
@@ -63,7 +63,9 @@ document.getElementById("resume").innerHTML = `
 <p><b>Description:</b> ${description}</p>
 
 <h3>LANGUAGES KNOWN</h3>
-<p>${language}</p>
+<ul>
+${language.split(',').map(lang => `<li>${lang.trim()}</li>`).join('')}
+</ul>
 
 <h3>DECLARATION</h3>
 <p>I hereby declare that the information provided above is true and correct to the best of my knowledge.</p>
