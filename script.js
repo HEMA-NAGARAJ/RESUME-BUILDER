@@ -47,9 +47,10 @@ ${technical.split(',').map(skill => `<li>${skill.trim()}</li>`).join('')}
 
 <h3>SOFT SKILLS</h3>
 <ul>
-${soft.split(',').map(skill => `<li>${skill.trim()}</li>`).join('')}
+${soft.split(',').map(function(skill) {
+    return `<li>${skill.trim()}</li>`;
+}).join('')}
 </ul>
-
 <h3>INTERNSHIP</h3>
 <p>${internship}</p>
 
