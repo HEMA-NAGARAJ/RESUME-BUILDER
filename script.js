@@ -20,6 +20,7 @@ let title=document.getElementById("title").value;
 let domain=document.getElementById("domain").value;
 let tools=document.getElementById("tools").value;
 let description=document.getElementById("description").value;
+let language = document.getElementById("language").value;
 
 document.getElementById("resume").innerHTML = `
 <center>
@@ -62,10 +63,7 @@ document.getElementById("resume").innerHTML = `
 <p><b>Description:</b> ${description}</p>
 
 <h3>LANGUAGES KNOWN</h3>
-<ul>
-<li>Tamil (R/W/S)</li>
-<li>English (R/W/S)</li>
-</ul>
+<p>${language}</p>
 
 <h3>DECLARATION</h3>
 <p>I hereby declare that the information provided above is true and correct to the best of my knowledge.</p>
