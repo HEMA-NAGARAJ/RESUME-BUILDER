@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Resume Builder</h1>
+
+<input type="text" id="name" placeholder="Name">
+<input type="email" id="email" placeholder="Email">
+<input type="text" id="phone" placeholder="Phone">
+<input type="text" id="skills" placeholder="Skills">
+<input type="text" id="education" placeholder="Education">
+
+<button onclick="generateResume()">Generate Resume</button>
+
+<div id="resume"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
