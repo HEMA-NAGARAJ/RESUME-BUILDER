@@ -42,7 +42,9 @@ document.getElementById("resume").innerHTML = `
 
 <h3>TECHNICAL SKILLS</h3>
 <ul>
-${technical.split(',').map(skill => `<li>${skill.trim()}</li>`).join('')}
+${technical.split(',').map(function(skill) {
+    return `<li>${skill.trim()}</li>`;
+}).join('')}
 </ul>
 
 <h3>SOFT SKILLS</h3>
@@ -65,7 +67,9 @@ ${soft.split(',').map(function(skill) {
 
 <h3>LANGUAGES KNOWN</h3>
 <ul>
-${language.split(',').map(lang => `<li>${lang.trim()}</li>`).join('')}
+${language.split(',').map(function(lang) {
+    return `<li>${lang.trim()}</li>`;
+}).join('')}
 </ul>
 
 <h3>DECLARATION</h3>
