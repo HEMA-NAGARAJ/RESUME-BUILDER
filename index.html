@@ -6,18 +6,38 @@
 </head>
 <body>
 
-<h1>Resume Builder</h1>
+<div class="form-container">
+    <h1>Resume Builder</h1>
 
-<input type="text" id="name" placeholder="Name">
-<input type="email" id="email" placeholder="Email">
-<input type="text" id="phone" placeholder="Phone">
-<input type="text" id="skills" placeholder="Skills">
-<input type="text" id="education" placeholder="Education">
+    <input type="text" id="name" placeholder="Name">
+    <input type="text" id="address" placeholder="Address">
+    <input type="text" id="mobile" placeholder="Mobile Number">
+    <input type="email" id="email" placeholder="Email">
 
-<button onclick="generateResume()">Generate Resume</button>
+    <textarea id="career" placeholder="Career Objective"></textarea>
+
+    <input type="text" id="ug" placeholder="UG Details">
+    <input type="text" id="hsc" placeholder="HSC Details">
+    <input type="text" id="sslc" placeholder="SSLC Details">
+
+    <input type="text" id="technical" placeholder="Technical Skills">
+    <input type="text" id="soft" placeholder="Soft Skills">
+
+    <input type="text" id="internship" placeholder="Internship">
+
+    <input type="text" id="achievement" placeholder="Achievement">
+
+    <input type="text" id="title" placeholder="Project Title">
+    <input type="text" id="domain" placeholder="Project Domain">
+    <input type="text" id="tools" placeholder="Tools Used">
+    <textarea id="description" placeholder="Project Description"></textarea>
+
+    <button onclick="generateResume()">Generate Resume</button>
+</div>
 
 <div id="resume"></div>
 
 <script src="script.js"></script>
+
 </body>
 </html>
