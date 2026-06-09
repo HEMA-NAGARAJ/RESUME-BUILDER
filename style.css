@@ -1,21 +1,26 @@
-body {
-    font-family: Arial;
-    padding: 20px;
+body{
+    font-family: Times New Roman;
+    margin:20px;
 }
 
-input {
-    display: block;
-    margin: 10px 0;
-    padding: 8px;
-    width: 300px;
+.form-container{
+    width:50%;
+    margin:auto;
 }
 
-button {
-    padding: 10px;
+input,textarea{
+    width:100%;
+    padding:10px;
+    margin:5px 0;
 }
 
-#resume {
-    margin-top: 20px;
-    border: 1px solid black;
-    padding: 15px;
+button{
+    padding:10px 20px;
+}
+
+#resume{
+    width:80%;
+    margin:30px auto;
+    border:1px solid black;
+    padding:30px;
 }
